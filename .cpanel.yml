@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sbsconst/public_html/cryptoex.com
+    - /bin/rsync -av --delete ./ $DEPLOYPATH
