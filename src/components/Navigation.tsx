@@ -19,6 +19,7 @@ export default function Navigation() {
             <Link href="/bridge"><a className="text-gray-300 hover:text-primary transition-colors">Bridge</a></Link>
             <Link href="/p2p"><a className="text-gray-300 hover:text-primary transition-colors">P2P</a></Link>
             <Link href="/portfolio"><a className="text-gray-300 hover:text-primary transition-colors">Portfolio</a></Link>
+            <Link href="/usdtz"><a className="text-gray-300 hover:text-primary transition-colors">USDTz</a></Link>
           </div>
 
           <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/50">
