@@ -1,5 +1,6 @@
 import { Link } from 'wouter'
 import { Zap, Shield, Globe, TrendingUp } from 'lucide-react'
+import LogoButton from '../components/LogoButton'
 
 export default function Home() {
   return (
@@ -7,6 +8,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
+          <div className="mb-6 flex justify-center">
+            <LogoButton size="lg" clickable={false} />
+          </div>
           <div className="mb-6 inline-block px-4 py-2 bg-blue-600/20 border border-blue-500/50 rounded-full">
             <span className="text-blue-400 text-sm font-semibold">🎉 Now Supporting USDTz Hybrid Stablecoin</span>
           </div>
@@ -23,11 +27,21 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/swap">
-              <a className="btn-primary">Start Trading →</a>
+              <a className="px-6 py-3 bg-yellow-300 text-gray-900 font-semibold rounded-lg hover:bg-yellow-400 transition-colors border-4 border-yellow-600" style={{
+                borderStyle: 'dashed',
+                boxShadow: '0 0 0 3px #6B8E23'
+              }}>
+                Start Trading →
+              </a>
             </Link>
-            <button className="px-6 py-3 border border-primary rounded-lg text-primary hover:bg-primary/10 transition-colors">
-              Mint USDTz
-            </button>
+            <Link href="/usdtz">
+              <a className="px-6 py-3 bg-yellow-300 text-gray-900 font-semibold rounded-lg hover:bg-yellow-400 transition-colors border-4 border-yellow-600" style={{
+                borderStyle: 'dashed',
+                boxShadow: '0 0 0 3px #6B8E23'
+              }}>
+                Redeem USDTz
+              </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -87,7 +101,12 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4">Ready to Start Trading?</h2>
           <p className="text-gray-400 mb-8">Connect your wallet and experience the future of DeFi trading.</p>
           <Link href="/swap">
-            <a className="btn-primary inline-block">Launch App →</a>
+            <a className="px-6 py-3 bg-yellow-300 text-gray-900 font-semibold rounded-lg hover:bg-yellow-400 transition-colors border-4 border-yellow-600 inline-block" style={{
+              borderStyle: 'dashed',
+              boxShadow: '0 0 0 3px #6B8E23'
+            }}>
+              Launch App →
+            </a>
           </Link>
         </div>
       </section>

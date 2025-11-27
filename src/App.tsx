@@ -8,6 +8,7 @@ import Bridge from './pages/Bridge'
 import Portfolio from './pages/Portfolio'
 import Redeem from './pages/Redeem'
 import USDTzDeposit from './pages/USDTzDeposit'
+import Wallet from './pages/Wallet'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/redeem" component={Redeem} />
           <Route path="/usdtz" component={USDTzDeposit} />
+          <Route path="/wallet" component={Wallet} />
         </main>
         <Footer />
         <Toaster position="bottom-right" />
